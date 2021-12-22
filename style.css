@@ -69,6 +69,7 @@ body{
 }
 .value-h{
     height: 42px;
+    
    
 }
 .ua{
@@ -137,9 +138,7 @@ body{
     margin-right: 30px;
 }
 
-input{
-    width: 185px;
-}
+
 .chck{
     width: 55px;
     height: 50px;
@@ -150,7 +149,7 @@ input{
     border-radius: 2px;
 }
 input[type=text]{
-    width:185px;
+    width:125px;
 }
 input[type=text1]{
     width: 100px;
@@ -168,27 +167,28 @@ input[type=text1]{
 
 .menu{
     
-    
+    justify-content: space-between;
     margin-top:29px;
     display: flex;
+    align-items: center;
+    width: 100%;
 }
-
-.fa-search{
+.group{
+    display: flex;
+}
+/* .fa-search{
     margin-right: 60px;
 }
 .fa-caret-down{
     margin-right: 60px; 
-}
+} */
 .text{
     color: #616161;
 
 }
-.nn{
-    margin-right: 60px;
-}
 
 .intro{
-    width: 100%;
+    
     /* margin-left: 131px; */
     margin-top: 23px;
     display: flex;
@@ -197,7 +197,8 @@ input[type=text1]{
 
 .intro-inner{
     background: url('./img/maxresdefault\ \(1\)\ 2.png') no-repeat;
-    width: 1440px;
+    
+    height: 100%;
     margin: 0;
     /* height: 501.62px;   */
     display: flex;
@@ -246,12 +247,13 @@ input[type=text1]{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 2px;
     margin-left: 200px;
     margin-top: 45px;
     
 }
-.bg{
+/* .bg{
     position: absolute;
     width: 270px;
     height: 60px;
@@ -260,10 +262,8 @@ input[type=text1]{
     opacity: 0;
     background: rgba(255, 255, 255, 0.25);
     border-radius: 2px;
-}
-.bg:hover{
-    opacity: 1;
-}
+} */
+
 .a_more{
     text-decoration: none;
     font-family: 'Montserrat';
@@ -311,8 +311,9 @@ input[type=text1]{
 
 .about-inner{
     display: flex;
+    justify-content: center;
     background:  #F8F8F8;
-    padding-left: 198px;
+    align-items: center;
 }
 .tour_operator{
     width: 624px;
@@ -696,7 +697,9 @@ input[type=text1]{
     color: black;
 }
 
-
+.wist{
+    display: flex;
+}
 .wist-inner{
     margin-top: 100px;
     background: url('./img/GettyImages-685890576-2200x880\ 1.png') no-repeat;
@@ -706,8 +709,15 @@ input[type=text1]{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
 }
-
+.w-main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 172px;
+}
 .w-text{
     font-family: Montserrat;
     font-style: normal;
@@ -719,9 +729,9 @@ input[type=text1]{
     height: 110px;
     text-align: center;
     text-transform: uppercase;
-    
+    z-index: 10;
     color: #FFFFFF;
-    margin-top: 172px;
+    
     
 }
 .travel-w{
@@ -730,7 +740,7 @@ input[type=text1]{
     height: 55px;
     display: flex;
     justify-content: center;
-    top: 2130px;
+    
     
     font-family: 'Montserrat';
     font-style: normal;
@@ -741,7 +751,7 @@ input[type=text1]{
     
     text-align: center;
     text-transform: uppercase;
-    
+    z-index: 0;
     color: rgba(255, 255, 255, 0.2);
     
 }
@@ -804,16 +814,19 @@ input[type=text1]{
     
 }
 
-
+.footer{
+    display: flex;
+}
 .footer-inner{
-    width: 1440px;
+    width: 100%;
     height: 370px;
     margin-top: 90px;
     
     background: url('./img/SloveniaHeader\ 3.png');
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
 }
 .end{
     display: flex;
@@ -823,9 +836,9 @@ input[type=text1]{
 
 
 .f-background{
-    width: 1440px;
+    width: 1200px;
     height: 370px;
-    padding-left: 201px;
+    padding-left: 100px;
     background: linear-gradient(180deg, #ECECEC 0%, rgba(232, 232, 232, 0) 51.87%, #FFFFFF 100%);
     z-index: 2;
     padding-top:134px;
@@ -880,14 +893,17 @@ a{
 }
 
 .email-inner{
-    width: 1440px;
+    width: 100%;
     height: 255px;
     background: #DD4053;
-    padding-left: 201px;
+    width: 1440px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: relative;
     margin-top: 90px;
+    padding:30px;
 }
 .e-up{
     display: flex;
@@ -900,12 +916,12 @@ a{
     line-height: 55px;
     /* identical to box height, or 196% */
     
-    margin-top: 60px;
+    
     color: #FFFFFF;
 }
 
 .ul-text{
-    margin-top: 60px;
+    
     margin-left: 60px;
     width: 363px;
     height: 52px;
@@ -929,7 +945,7 @@ a{
     z-index: 0;
     width: 406px;
     height: 406px;
-    left: 931px;
+    left: 910px;
     top: -80px;
 }
 
@@ -1015,12 +1031,55 @@ input[type=email]{
     align-items: center;
 }
 
-@media(min-width:768px)and (max-width:979px){
+@media(min-width:1200px) and (max-width:1400px){
     .rectangle{
-        visibility: hidden;
+        
+        margin-left: 15px;
+        margin-right: 15px;
     }
-    .contacts{
-        flex-direction: column;
+    .value-h{
+        
+        font-size: 15px;
     }
-    
+    .container{
+        max-width: 1200px;
+    }
+    .email-inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+    }
+    .up-text{
+        margin-top: 20px;
+        font-size: 23px;
+        line-height: 55px;
+    }
+    .ul-text{
+        margin-top: 20px;
+        margin-left: 60px;
+        width: 363px;
+        height: 52px;      
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .wave{
+        position: absolute;
+        z-index: 0;
+        width: 406px;
+        height: 406px;
+        left: 640px;
+        top: -100px;
+    }
+    input[type=email]{
+        width: 310px;
+         
+    }
+    .wist-inner{
+        width: 1200px;
+    }
+    .detailed{
+        width: 1100px;
+    }
 }
